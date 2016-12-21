@@ -1,0 +1,70 @@
+{
+	labels:
+	[
+		"funções"
+	],
+	
+	exercises:
+	[
+		{
+			name: "Euclides",
+			url: "funcoes/euclides.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Fatorial",
+			url: "funcoes/fatorial.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Fila",
+			url: "funcoes/fila.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Pilha",
+			url: "funcoes/pilha.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Mais divisores",
+			url: "funcoes/mais_divisores.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Mínimo",
+			url: "funcoes/minimo.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Primos",
+			url: "funcoes/primos.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Primos II",
+			url: "funcoes/primos2.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Raízes de equação do segundo grau",
+			url: "funcoes/raizes.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Seven Eleven",
+			url: "funcoes/seven_eleven.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Soma",
+			url: "funcoes/soma.html",
+			labels: ["funções"]
+		},
+		{
+			name: "Verificador de parênteses",
+			url: "funcoes/verifica_parenteses.html",
+			labels: ["funções"]
+		}
+	]
+}
