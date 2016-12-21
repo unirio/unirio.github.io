@@ -164,11 +164,9 @@ a img{
 
 .android-be-together-section {
   position: relative;
-  height: 800px;
+  height: 240px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('https://getmdl.io/templates/android-dot-com/images/slide01.jpg') center 30% no-repeat;
-  background-size: cover;
 }
 
 .logo-font {
@@ -179,13 +177,14 @@ a img{
 }
 
 .android-slogan {
-  font-size: 60px;
-  padding-top: 160px;
+  font-size: 48px;
+  padding-top: 80px;
 }
 
 .android-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
+  font-weight: normal;
 }
 
 .android-create-character {
@@ -371,7 +370,7 @@ a img{
 }
 
 .android-more-section {
-  padding: 80px 0;
+  padding: 16px 0px 80px 0px;
   max-width: 1044px;
   margin-left: auto;
   margin-right: auto;
@@ -397,6 +396,7 @@ a img{
   .android-card-container .mdl-card__title {
     background: transparent;
     height: auto;
+    padding-bottom: 0px;
   }
 
   .android-card-container .mdl-card__title-text {
@@ -407,6 +407,7 @@ a img{
   .android-card-container .mdl-card__supporting-text {
     height: auto;
     color: black;
+    padding-top: 0px;
     padding-bottom: 56px;
   }
 
@@ -531,4 +532,63 @@ a img{
   .android-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
+}
+
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+
+.exercise-title {
+  align-self: flex-end;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  -webkit-transform-origin: 149px 48px;
+  transform-origin: 149px 48px;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.exercise-title:hover {
+  color: navy;
+}
+
+.exercise-subtitle {
+  padding-top: 0px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.mdl-chip {
+  height: 16px;
+  line-height: 16px;
+  background: lightgreen;
+}
+
+.mdl-chip__text {
+  font-size: 10px;
+}
+
+.exercise-description {
+  border: 1px solid lightgray;
+  background: white;
+  padding: 16px;
+}
+
+.exercise-description pre {
+  border: 1px solid lightgray;
+  background: #eee;
+  padding: 4px;
+}
+
+.android-content {
+  background-color: #f3f3f3;
 }

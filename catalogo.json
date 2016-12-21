@@ -1,70 +1,62 @@
-{
-	labels:
-	[
-		"funções"
-	],
-	
-	exercises:
-	[
-		{
-			name: "Euclides",
-			url: "funcoes/euclides.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Fatorial",
-			url: "funcoes/fatorial.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Fila",
-			url: "funcoes/fila.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Pilha",
-			url: "funcoes/pilha.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Mais divisores",
-			url: "funcoes/mais_divisores.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Mínimo",
-			url: "funcoes/minimo.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Primos",
-			url: "funcoes/primos.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Primos II",
-			url: "funcoes/primos2.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Raízes de equação do segundo grau",
-			url: "funcoes/raizes.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Seven Eleven",
-			url: "funcoes/seven_eleven.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Soma",
-			url: "funcoes/soma.html",
-			labels: ["funções"]
-		},
-		{
-			name: "Verificador de parênteses",
-			url: "funcoes/verifica_parenteses.html",
-			labels: ["funções"]
-		}
-	]
-}
+[
+	{
+		"name": "Euclides",
+		"url": "catalogo/funcoes/euclides.html",
+		"labels": ["funÃ§Ãµes", "gregos"]
+	},
+	{
+		"name": "Fatorial",
+		"url": "catalogo/funcoes/fatorial.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Fila",
+		"url": "catalogo/funcoes/fila.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Pilha",
+		"url": "catalogo/funcoes/pilha.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Mais divisores",
+		"url": "catalogo/funcoes/mais_divisores.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "MÃ­nimo",
+		"url": "catalogo/funcoes/minimo.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Primos",
+		"url": "catalogo/funcoes/primos.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Primos II",
+		"url": "catalogo/funcoes/primos2.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "RaÃ­zes de equaÃ§Ã£o do segundo grau",
+		"url": "catalogo/funcoes/raizes.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Seven Eleven",
+		"url": "catalogo/funcoes/seven_eleven.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Soma",
+		"url": "catalogo/funcoes/soma.html",
+		"labels": ["funÃ§Ãµes"]
+	},
+	{
+		"name": "Verificador de parÃªnteses",
+		"url": "catalogo/funcoes/verifica_parenteses.html",
+		"labels": ["funÃ§Ãµes"]
+	}
+]
