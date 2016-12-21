@@ -1,0 +1,29 @@
+<p>Uma fila é uma estrutura de dados que permite duas operações: push, que adiciona um valor 
+no final da fila e pop, que remove um valor do início da fila. Implemente estas duas operações
+considerando um vetor de inteiros recebido como referência, conforme os exemplos abaixo.</p>
+
+<pre>
+// fila vazia
+var queue: [Int] = []
+
+// adicionando o primeiro elemento
+push(1, &queue) 			// queue = [1]
+
+// adicionando o segundo elemento
+push(2, &queue) 			// queue = [1, 2]
+
+// retirando o primeiro elemento
+pop(&queue) 				// 1, queue = [2]
+
+// adicionando o terceiro elemento
+push(3, &queue) 			// queue = [2, 3]
+
+// retirando o segundo elemento
+pop(&queue) 				// 2, queue = [3]
+
+// retirando o terceiro elemento
+pop(&queue) 				// 3, queue = []
+
+// retirando um elemento inexistente
+pop(&queue) 				// retorna nil
+</pre>
