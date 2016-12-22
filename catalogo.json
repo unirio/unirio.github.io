@@ -318,5 +318,30 @@
 		"name": "Polinômios",
 		"url": "catalogo/classes/polinomio.html",
 		"labels": ["classes", "operadores"]
+	},
+	{
+		"name": "Círculo",
+		"url": "catalogo/classes/circulo.html",
+		"labels": ["classes"]
+	},
+	{
+		"name": "Autor e livro",
+		"url": "catalogo/classes/livro.html",
+		"labels": ["classes"]
+	},
+	{
+		"name": "Filas",
+		"url": "catalogo/classes/fila.html",
+		"labels": ["classes"]
+	},
+	{
+		"name": "Pilhas",
+		"url": "catalogo/classes/pilhas.html",
+		"labels": ["classes"]
+	},
+	{
+		"name": "Pontos",
+		"url": "catalogo/classes/pontos.html",
+		"labels": ["classes"]
 	}
 ]
