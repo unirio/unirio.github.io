@@ -353,5 +353,10 @@
 		"name": "Figuras geométricas",
 		"url": "catalogo/classes/figuras-geometricas.html",
 		"labels": ["classes", "herança"]
+	},
+	{
+		"name": "Objetos móveis",
+		"url": "catalogo/classes/objetos-moveis.html",
+		"labels": ["classes", "interface", "protocolo"]
 	}
 ]
