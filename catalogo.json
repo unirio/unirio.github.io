@@ -123,5 +123,85 @@
 		"name": "Dinheiro trocado",
 		"url": "catalogo/variaveis/trocado.html",
 		"labels": ["variáveis", "funções"]
+	},
+	{
+		"name": "Anos bissextos",
+		"url": "catalogo/condicionais/anos_bissextos.html",
+		"labels": ["condicionais"]
+	},
+	{
+		"name": "Cara ou coroa",
+		"url": "catalogo/condicionais/cara_coroa.html",
+		"labels": ["condicionais"]
+	},
+	{
+		"name": "Divisibilidade",
+		"url": "catalogo/condicionais/divisibilidade.html",
+		"labels": ["condicionais"]
+	},
+	{
+		"name": "Contagem alternativa",
+		"url": "catalogo/loops/contagem_alternativa.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Fatoração",
+		"url": "catalogo/loops/fatoracao.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Fibonacci",
+		"url": "catalogo/loops/fibonacci.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Losango",
+		"url": "catalogo/loops/losango.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "MDC",
+		"url": "catalogo/loops/mdc.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Números quadrados",
+		"url": "catalogo/loops/numeros_quadrados.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Pirâmide",
+		"url": "catalogo/loops/piramide.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Quadrado com borda",
+		"url": "catalogo/loops/quadrado_borda.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Quadrado cheio",
+		"url": "catalogo/loops/quadrado_cheio.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Quadrado vazio",
+		"url": "catalogo/loops/quadrado_vazio.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Retângulo",
+		"url": "catalogo/loops/retangulo.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Tabuleiro de xadrez",
+		"url": "catalogo/loops/tabuleiro_xadrez.html",
+		"labels": ["loops"]
+	},
+	{
+		"name": "Triângulo",
+		"url": "catalogo/loops/triangulo.html",
+		"labels": ["loops"]
 	}
 ]
