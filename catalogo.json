@@ -278,5 +278,45 @@
 		"name": "Melhor pontuação",
 		"url": "catalogo/dicionario/melhor_pontuacao.html",
 		"labels": ["dicionários"]
+	},
+	{
+		"name": "Cadeias numéricas",
+		"url": "catalogo/closures/cadeias-numericas.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "DIV3",
+		"url": "catalogo/closures/div3.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "Juntando partes",
+		"url": "catalogo/closures/juntando-partes.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "K vezes",
+		"url": "catalogo/closures/k-vezes.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "Máximo com closures",
+		"url": "catalogo/closures/maximo.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "Ordenação com closures",
+		"url": "catalogo/closures/ordenacao.html",
+		"labels": ["closures", "swift"]
+	},
+	{
+		"name": "Números complexos",
+		"url": "catalogo/classes/complexo.html",
+		"labels": ["classes", "operadores"]
+	},
+	{
+		"name": "Polinômios",
+		"url": "catalogo/classes/polinomio.html",
+		"labels": ["classes", "operadores"]
 	}
 ]
