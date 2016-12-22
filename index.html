@@ -49,10 +49,10 @@
           </span>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#" ng-click='listaCategorias()'>Todas as categorias</a>
+          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='listaCategorias()'>Todas as categorias</a>
         </nav>
         <nav class="mdl-navigation" ng-repeat="categoria in categorias">
-          <a class="mdl-navigation__link" href="#" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
+          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
         </nav>
       </div>
 
@@ -80,7 +80,7 @@
                 <span class="mdl-typography--font-light mdl-typography--subhead">{{categoria.exercicios.length}} exercício(s)</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#" ng-click='selecionaCategoria(categoria)'>
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="javascript:void(0)" ng-click='selecionaCategoria(categoria)'>
                    Ver exercícios
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -145,7 +145,7 @@
            </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">
-                Volta para o início
+                Volta para o topo
                 <i class="material-icons">expand_less</i>
               </a>
             </div>
