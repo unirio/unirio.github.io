@@ -343,5 +343,15 @@
 		"name": "Pontos",
 		"url": "catalogo/classes/pontos.html",
 		"labels": ["classes"]
+	},
+	{
+		"name": "Círculo e cilindro",
+		"url": "catalogo/classes/circulo-cilindro.html",
+		"labels": ["classes", "herança"]
+	},
+	{
+		"name": "Figuras geométricas",
+		"url": "catalogo/classes/figuras-geometricas.html",
+		"labels": ["classes", "herança"]
 	}
 ]
