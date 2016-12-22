@@ -58,5 +58,70 @@
 		"name": "Verificador de parênteses",
 		"url": "catalogo/funcoes/verifica_parenteses.html",
 		"labels": ["funções"]
+	},
+	{
+		"name": "Expressões",
+		"url": "catalogo/strings/expressoes.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Hexadecimal",
+		"url": "catalogo/strings/hexadecimal.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Palavras",
+		"url": "catalogo/strings/palavras.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Palíndromo",
+		"url": "catalogo/strings/palindromo.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Reverso",
+		"url": "catalogo/strings/reverso.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Tabela de jogos",
+		"url": "catalogo/strings/tabela_jogos.html",
+		"labels": ["string"]
+	},
+	{
+		"name": "Área e perímetro",
+		"url": "catalogo/variaveis/area_perimetro.html",
+		"labels": ["variáveis"]
+	},
+	{
+		"name": "Dois irmãos",
+		"url": "catalogo/variaveis/dois_irmaos.html",
+		"labels": ["variáveis"]
+	},
+	{
+		"name": "Pixels",
+		"url": "catalogo/variaveis/pixels.html",
+		"labels": ["variáveis"]
+	},
+	{
+		"name": "Segundos",
+		"url": "catalogo/variaveis/segundos.html",
+		"labels": ["variáveis"]
+	},
+	{
+		"name": "Soma e diferença",
+		"url": "catalogo/variaveis/soma_diferenca.html",
+		"labels": ["variáveis"]
+	},
+	{
+		"name": "String com soma",
+		"url": "catalogo/variaveis/.html",
+		"labels": ["variáveis", "string"]
+	},
+	{
+		"name": "Dinheiro trocado",
+		"url": "catalogo/variaveis/trocado.html",
+		"labels": ["variáveis", "funções"]
 	}
 ]
