@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt" ng-app="CodeSnackApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Repositório de exercícios de programação do BSI-UNIRIO.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Coding Plaza</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body ng-controller="CodeSnackCtrl">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <!-- Header -->
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="android-title mdl-layout-title" style="color:green;font-weight:bold;font-size:28px;">
+            Coding Plaza
+          </span>
+
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Search bar -->
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" ng-model="searchString" my-enter="procura(searchString)">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side bar -->
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <span style="margin-top: 96px; color: white; font-weight: bold; display: block;">
+            Categorias
+          </span>
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='listaCategorias()'>Todas as categorias</a>
+        </nav>
+        <nav class="mdl-navigation" ng-repeat="categoria in categorias">
+          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
+        </nav>
+      </div>
+
+      <!-- Central stage -->
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">Repositório de Exercícios de Programação</div>
+          <div class="logo-font android-sub-slogan">Procure pelo exercício desejado ou escolha uma categoria</div>
+        </div>
+
+        <!-- Categories -->
+        <div class="android-more-section" ng-hide="categoriaSelecionada">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">Categorias</div>
+          <div class="android-card-container mdl-grid">
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp" ng-repeat="categoria in categorias">
+              <div class="mdl-card__media">
+                <img src="images/categoria.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">{{categoria.nome}}</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">{{categoria.exercicios.length}} exercício(s)</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="javascript:void(0)" ng-click='selecionaCategoria(categoria)'>
+                   Ver exercícios
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Exercises -->
+        <div class="android-more-section" ng-hide="!categoriaSelecionada || exercicioSelecionado">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet mdl-cell--10-col-phone">
+              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercícios: {{categoriaSelecionada.nome}}</div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align: right;">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored" ng-click="listaCategorias()">
+                <i class="material-icons">arrow_back</i>
+              </button>
+            </div>
+          </div>
+
+          <ul class="demo-list-two mdl-list" style="100%">
+            <li class="mdl-list__item mdl-list__item--two-line" ng-repeat="exercicio in categoriaSelecionada.exercicios">
+              <div class="mdl-list__item-primary-content" ng-click="selecionaExercicio(exercicio)">
+                <i class="material-icons mdl-list__item-icon">assignment</i>
+                <span>{{exercicio.name}}</span>
+                <span class="mdl-list__item-sub-title">
+                  <span ng-repeat="label in exercicio.labels" style="margin-right: 4px; font-size: 10px; padding: 2px;">{{label}}</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- Selected exercise -->
+        <div class="android-more-section" ng-hide="!exercicioSelecionado">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet mdl-cell--10-col-phone">
+              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercício: {{exercicioSelecionado.name}}</div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align: right;">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored" ng-click="retornaCategoria()">
+                <i class="material-icons">arrow_back</i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone exercise-description" ng-bind-html="exercicioSelecionado.conteudo">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+             <p class="mdl-typography--font-light">BSI/UNIRIO: ©2016</p>
+           </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Volta para o topo
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Material design -->
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <!-- Local script -->
+    <script src="app.js"></script>
+  
+   </body>
+</html>
+
+<!--
+  BUSCA
+  -->
