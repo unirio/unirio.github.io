@@ -48,6 +48,9 @@
             Unirio: Code Snack
           </span>
         </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#" ng-click='listaCategorias()'>Home</a>
+        </nav>
         <nav class="mdl-navigation" ng-repeat="categoria in categorias">
           <a class="mdl-navigation__link" href="#" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
         </nav>

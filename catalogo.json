@@ -203,5 +203,80 @@
 		"name": "Triângulo",
 		"url": "catalogo/loops/triangulo.html",
 		"labels": ["loops"]
+	},
+	{
+		"name": "Busca em vetor",
+		"url": "catalogo/vetores/busca.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Dígitos",
+		"url": "catalogo/vetores/digitos.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Divisores",
+		"url": "catalogo/vetores/divisores.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Divisores II",
+		"url": "catalogo/vetores/divisores2.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Instrumentos musicais",
+		"url": "catalogo/vetores/instrumentos.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Intersecção",
+		"url": "catalogo/vetores/interseccao.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Máximo em vetor",
+		"url": "catalogo/vetores/maximo.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Números ímpares",
+		"url": "catalogo/vetores/numeros_impares.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Posições ímpares",
+		"url": "catalogo/vetores/posicoes_impares.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Reverso",
+		"url": "catalogo/vetores/reverso.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Soma em vetor",
+		"url": "catalogo/vetores/soma.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Xadrez",
+		"url": "catalogo/vetores/xadrez.html",
+		"labels": ["vetores"]
+	},
+	{
+		"name": "Cantores",
+		"url": "catalogo/dicionario/cantores.html",
+		"labels": ["dicionários"]
+	},
+	{
+		"name": "Frequência",
+		"url": "catalogo/dicionario/frequencia.html",
+		"labels": ["dicionários"]
+	},
+	{
+		"name": "Melhor pontuação",
+		"url": "catalogo/dicionario/melhor_pontuacao.html",
+		"labels": ["dicionários"]
 	}
 ]
