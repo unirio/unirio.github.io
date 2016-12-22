@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Repositório de exercícios de programação do BSI-UNIRIO.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Unirio: Code Snack</title>
+    <title>Coding Plaza</title>
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -23,7 +23,7 @@
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="android-title mdl-layout-title" style="color:green;font-weight:bold;font-size:28px;">
-            Unirio: Code Snack
+            Coding Plaza
           </span>
 
           <!-- Add spacer, to align navigation to the right in desktop -->
@@ -45,11 +45,11 @@
       <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
           <span style="margin-top: 96px; color: white; font-weight: bold; display: block;">
-            Unirio: Code Snack
+            Categorias
           </span>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#" ng-click='listaCategorias()'>Home</a>
+          <a class="mdl-navigation__link" href="#" ng-click='listaCategorias()'>Todas as categorias</a>
         </nav>
         <nav class="mdl-navigation" ng-repeat="categoria in categorias">
           <a class="mdl-navigation__link" href="#" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
