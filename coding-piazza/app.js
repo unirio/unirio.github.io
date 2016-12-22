@@ -14,6 +14,25 @@ CodeSnackApp.directive('myEnter', function () {
     };
 });
 
+CodeSnackApp.directive('menuClose', function() {
+    return {
+        restrict: 'AC',
+        link: function($scope, $element) {
+            $element.bind('click', function() {
+                var drawer = angular.element(document.querySelector('.mdl-layout__drawer'));
+                if(drawer) {
+                    drawer.toggleClass('is-visible');
+                }
+                var obfuscator = angular.element(document.querySelector('.mdl-layout__obfuscator'));
+                if(obfuscator) {
+                    obfuscator.toggleClass('is-visible');
+                }
+            });
+        }
+    };
+});
+
+
 CodeSnackApp.controller('CodeSnackCtrl', function($scope, $http) {
 
 	//
@@ -70,7 +89,6 @@ CodeSnackApp.controller('CodeSnackCtrl', function($scope, $http) {
     		var categoriaExercicio = exercicio.labels[i];
 
     		var categoria = pegaCategoria(categoriaExercicio, categorias);
-    		console.log(categoria);
 
     		if (!categoria) {
     			categoria = { nome: categoriaExercicio, exercicios: [] };
@@ -144,7 +162,6 @@ CodeSnackApp.controller('CodeSnackCtrl', function($scope, $http) {
 		if (!$scope.exercicioSelecionado.conteudo) {
 		 	$http.get(exercicio.url)
 				.then(function(res){
-					console.log(res.data);
 		        	$scope.exercicioSelecionado.conteudo = res.data;
 		        });
 		}

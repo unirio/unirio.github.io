@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Repositório de exercícios de programação do BSI-UNIRIO.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Coding Plaza</title>
+    <title>Coding Piazza</title>
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -23,7 +23,7 @@
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="android-title mdl-layout-title" style="color:green;font-weight:bold;font-size:28px;">
-            Coding Plaza
+            Coding Piazza
           </span>
 
           <!-- Add spacer, to align navigation to the right in desktop -->
@@ -49,26 +49,21 @@
           </span>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='listaCategorias()'>Todas as categorias</a>
+          <a class="mdl-navigation__link" href="javascript:void(0)" menu-close ng-click='listaCategorias()'>Todas as categorias</a>
         </nav>
         <nav class="mdl-navigation" ng-repeat="categoria in categorias">
-          <a class="mdl-navigation__link" href="javascript:void(0)" ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
+          <a class="mdl-navigation__link" href="javascript:void(0)" menu-close ng-click='selecionaCategoria(categoria)'>{{categoria.nome}}</a>
         </nav>
       </div>
 
       <!-- Central stage -->
       <div class="android-content mdl-layout__content">
         <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">Repositório de Exercícios de Programação</div>
-          <div class="logo-font android-sub-slogan">Procure pelo exercício desejado ou escolha uma categoria</div>
-        </div>
 
         <!-- Categories -->
         <div class="android-more-section" ng-hide="categoriaSelecionada">
           <div class="android-section-title mdl-typography--display-1-color-contrast">Categorias</div>
           <div class="android-card-container mdl-grid">
-
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp" ng-repeat="categoria in categorias">
               <div class="mdl-card__media">
                 <img src="images/categoria.png">
@@ -94,7 +89,7 @@
         <div class="android-more-section" ng-hide="!categoriaSelecionada || exercicioSelecionado">
           <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet mdl-cell--10-col-phone">
-              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercícios: {{categoriaSelecionada.nome}}</div>
+              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercícios: <span style="color:green">{{categoriaSelecionada.nome}}</span></div>
             </div>
             <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align: right;">
               <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored" ng-click="listaCategorias()">
@@ -103,17 +98,27 @@
             </div>
           </div>
 
-          <ul class="demo-list-two mdl-list" style="100%">
-            <li class="mdl-list__item mdl-list__item--two-line" ng-repeat="exercicio in categoriaSelecionada.exercicios">
-              <div class="mdl-list__item-primary-content" ng-click="selecionaExercicio(exercicio)">
-                <i class="material-icons mdl-list__item-icon">assignment</i>
-                <span>{{exercicio.name}}</span>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp" ng-repeat="exercicio in categoriaSelecionada.exercicios">
+              <div class="mdl-card__media">
+                <img src="images/coding-0{{$index % 10}}.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">{{exercicio.name}}</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
                 <span class="mdl-list__item-sub-title">
                   <span ng-repeat="label in exercicio.labels" style="margin-right: 4px; font-size: 10px; padding: 2px;">{{label}}</span>
                 </span>
               </div>
-            </li>
-          </ul>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="javascript:void(0)" ng-click='selecionaExercicio(exercicio)'>
+                   Mais informações
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
         </div>
 
 
@@ -121,7 +126,7 @@
         <div class="android-more-section" ng-hide="!exercicioSelecionado">
           <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet mdl-cell--10-col-phone">
-              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercício: {{exercicioSelecionado.name}}</div>
+              <div class="android-section-title mdl-typography--display-1-color-contrast">Exercício: <span style="color:green">{{exercicioSelecionado.name}}</span></div>
             </div>
             <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--2-col-phone" style="text-align: right;">
               <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored" ng-click="retornaCategoria()">
@@ -135,6 +140,15 @@
             </div>
           </div>
         </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
 
         <!-- Footer -->
