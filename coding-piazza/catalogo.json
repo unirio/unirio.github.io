@@ -385,6 +385,11 @@
 		"labels": ["GUI (simples)"]
 	},
 	{
+		"name": "Taxa de juros",
+		"url": "catalogo/gui_simples/taxa_juros.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
 		"name": "Telefone",
 		"url": "catalogo/gui_simples/telefone.html",
 		"labels": ["GUI (simples)"]
