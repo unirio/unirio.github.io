@@ -380,6 +380,11 @@
 		"labels": ["GUI (simples)"]
 	},
 	{
+		"name": "Conversor de temperatura",
+		"url": "catalogo/gui_simples/conversor_temperatura.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
 		"name": "Telefone",
 		"url": "catalogo/gui_simples/telefone.html",
 		"labels": ["GUI (simples)"]
