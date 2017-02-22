@@ -358,5 +358,30 @@
 		"name": "Objetos móveis",
 		"url": "catalogo/classes/objetos-moveis.html",
 		"labels": ["classes", "interface", "protocolo"]
+	},
+	{
+		"name": "Contador",
+		"url": "catalogo/gui_simples/contador.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
+		"name": "Acumulador",
+		"url": "catalogo/gui_simples/acumulador.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
+		"name": "Fatorial",
+		"url": "catalogo/gui_simples/fatorial.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
+		"name": "Advinhação",
+		"url": "catalogo/gui_simples/adivinhacao.html",
+		"labels": ["GUI (simples)"]
+	},
+	{
+		"name": "Telefone",
+		"url": "catalogo/gui_simples/telefone.html",
+		"labels": ["GUI (simples)"]
 	}
 ]
